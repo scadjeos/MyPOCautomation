@@ -1,0 +1,11 @@
+
+
+  - name: Starting Action 
+    hosts: localhost ansible_connection=local
+    gather_facts: no
+    become: no 
+    strategy: free
+    roles: 
+      - { role: role_for_action}
+
+

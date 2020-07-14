@@ -1,0 +1,13 @@
+
+ --- 
+ 
+      - name : " Ping poc "
+        hosts: poc  
+        connection: network_cli 
+            tasks:
+      - name: ping
+        ping:
+
+
+
+

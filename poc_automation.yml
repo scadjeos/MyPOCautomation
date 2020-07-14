@@ -1,0 +1,30 @@
+ --- 
+
+    name: automating nexus switches
+    hosts: POC
+    connection: local
+    gather_facts: no
+
+
+    tasks:
+            #:  - name: config interfaces for vpc peer link
+             nxapi_interface: interface={{ item }} description= '172.18.48.41 to 172.18.48.42 (peer link)' mode=layer2 host={{ inventory_hostname }}
+             with_items:
+                     - Ethernet1/10
+                     - Ethernet1/11
+             
+
+            - name: config interfaces for vpc peer keepalive link
+              nxapi_interface: interface={{ item }} description= '172.18.48.41 to 172.18.48.42 (peer keepalive link)' mode=layer2 host={{ inventory_hostname }}
+              with_items:
+                     - Ethernet1/12
+                     - Ethernet1/13
+
+
+              
+            
+
+
+
+
+ 

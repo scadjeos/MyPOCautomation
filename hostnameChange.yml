@@ -1,0 +1,6 @@
+--- 
+- 
+    connection: local
+           hosts: poc
+
+
