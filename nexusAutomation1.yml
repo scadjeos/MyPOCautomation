@@ -16,4 +16,6 @@
       nxos_interface: interface=Ethernet1/53 description='Configured by Ansible' mode=layer3 host={{ inventory_hostname }}
                                                                
     # Admin down an interface
-    - nxos_interface: interface=Ethernet1/54 admin_state=down host={{ inventory_hostname }}
+    - nxos_interface: interface=Ethernet1/54 admin_state=down host={{ inventory_hostname }} 
+    # version 1
+
