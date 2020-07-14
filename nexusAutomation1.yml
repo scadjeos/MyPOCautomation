@@ -1,6 +1,6 @@
 ---
 
-- name: sample playbook
+- name: PROOF OF CONCEPT Device Automation
   hosts: POCDE9K02
   gather_facts: no
 
